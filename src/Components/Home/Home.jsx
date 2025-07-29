@@ -44,8 +44,22 @@ export default function Home() {
   ];
 
   useEffect(() => {
+    console.log('Component mounted')
     setPosts(initialPosts);
   }, []);
+
+  useEffect(() => {
+  console.log('Filter changed:', filter); 
+}, [filter]);
+
+
+  useEffect(() => {
+
+  return () => {
+    console.log('Component unmounted');
+  };
+}, []);
+
 
   return (
     <>
