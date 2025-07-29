@@ -1,0 +1,56 @@
+/* Custom styles */
+.hover-shadow {
+  transition: all 0.3s ease;
+}
+
+.hover-shadow:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.article-content {
+  line-height: 1.8;
+}
+
+.avatar {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Smooth transitions */
+.card,
+.btn,
+.progress-bar {
+  transition: all 0.3s ease;
+}
+
+/* Bootstrap overrides */
+.btn {
+  letter-spacing: 0.5px;
+}
+
+.progress {
+  overflow: visible;
+  background-color: #f8f9fa;
+}
+
+.progress-bar {
+  position: relative;
+  overflow: visible;
+}
+
+.progress-bar:after {
+  content: "";
+  position: absolute;
+  right: -5px;
+  top: -3px;
+  width: 10px;
+  height: 10px;
+  background-color: inherit;
+  border-radius: 50%;
+}
+
+.active {
+  color: #0d6efd;
+  background-color: rgba(13, 110, 253, 0.1);
+}

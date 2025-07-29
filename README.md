@@ -1,40 +1,40 @@
-# ⚛️ React Counter App
+# 📝 React Blog App
 
-A simple and elegant counter application built using **React.js**. This project demonstrates the use of React hooks (`useState`), props, component reusability, and a dynamic theme toggle (Light/Dark mode).
+A modern blog platform built with **React.js**, showcasing posts, nested routes for details and author info, and elegant Bootstrap styling. This app demonstrates routing with `react-router-dom`, component modularization, data filtering, and state management with hooks.
 
 ---
 
 ## 🚀 Features
 
-- ➕ **Increment Counter**: Increases the count by 1 on each click.
-- 🔄 **Reset Counter**: Resets the count to 0.
-- 🌗 **Dark/Light Mode Toggle**: Switch between light and dark themes using a toggle button in the navbar.
-- 🧩 **Reusable Components**: Clean and modular component structure.
+- 🏠 **Home Page with Filter**: Search through blog posts dynamically by title.
+- 📄 **Post Details**: View the full content of a post with author info.
+- 👩‍💻 **Author Info**: Nested route displaying author's biography and post stats.
+- 📊 **Stats Page**: Summary of blog statistics and post categories.
+- ℹ️ **About Page**: Overview of the blog and its goals.
+- 🌐 **Responsive Design**: Built with Bootstrap for seamless mobile and desktop experience.
+- 🔁 **Reusable Components**: All parts of the app are modular and reusable.
+- ⚛️ **React Router DOM**: Used for navigation and nested routes.
 
 ---
 
-## 📁 Folder Structure
+## 🗂️ Folder Structure
 
 ```
 src/
-│
-├── Components/
-│   ├── Home/
-│   │   └── Home.jsx
-|   |   └── Home.module.css
-│   ├── Navbar/
-│   │   └── Navbar.jsx
-|   |   └── Navbar.module.css
-│   ├── Counter/
-│   │   └── Counter.jsx
-|   |   └── Counter.module.css
-│   ├── Display/
-│   │   └── Display.jsx
-|   |   └── Display.module.css
+├── components/
+│   ├── About/
+│   ├── AuthorInfo/
 │   ├── Footer/
-│   │   └── Footer.jsx
-|   |   └── Footer.module.css
-└──
+│   ├── Home/
+│   ├── Layout/
+│   ├── Navbar/
+│   ├── NotFound/
+│   ├── PostCard/
+│   ├── PostDetails/
+│   ├── Stats/
+│
+├── App.js
+└── main.jsx
 ```
 
 ---
@@ -42,18 +42,19 @@ src/
 ## 🛠️ Technologies Used
 
 - React.js (with Hooks)
-- Bootstrap (for styling)
-- Font Awesome (for icons)
+- React Router DOM (v6+)
+- Bootstrap 5
+- Font Awesome
 
 ---
 
-## 📦 Installation & Setup
+## ⚙️ Installation & Setup
 
-1. **Clone the repo**
+1. **Clone the repository**
 
 ```bash
-git clone https://github.com/maha116/react-counter-app.git
-cd react-counter-app
+git clone https://github.com/Maha116/react-blog-app.git
+cd react-blog-app
 ```
 
 2. **Install dependencies**
@@ -62,7 +63,7 @@ cd react-counter-app
 npm install
 ```
 
-3. **Run Project**
+3. **Start the development server**
 
 ```bash
 npm run dev
@@ -70,19 +71,27 @@ npm run dev
 
 ---
 
-## 💡 Usage
+## 📋 Usage Guide
 
-- Click **Increment +** to increase the count.
-- Click **Reset** to reset the count to 0.
-- Use the **Dark/Light Mode** toggle in the navbar to switch themes.
+- Use the navbar to navigate between **Home**, **Stats**, and **About** pages.
+- On the Home page, type in the input to filter posts by title.
+- Click **Read More** to navigate to full post details.
+- Inside a post page, click **View Author Info** to see nested author bio.
+- Explore the Stats page to view total posts, views, and progress bars.
 
 ---
 
-## 👩‍🎓 Author
+## 🧑‍💻 Author
 
-**Maha Ebrahim**  
-_Frontend Developer | ITI Graduate_
+**Maha Ibrahim**  
+Frontend Developer | React Enthusiast
 
-📧 [mahaebrahiim4@gmail.com](mailto:mahaebrahiim4@gmail.com)\_
+📧 [mahaebrahiim4@gmail.com](mailto:mahaebrahiim4@gmail.com)
+
+---
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
 
 ---

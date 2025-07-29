@@ -1,16 +1,21 @@
-import React from 'react'
+import React from 'react';
 
-export default function Footer(props) {
-    let {theme} = props;
-    
-
+export default function Footer() {
     return (
         <>
-        <footer className={`py-3 ${theme === 'dark' ? 'bg-dark text-white' : 'bg-light'}`}>
+        <footer className="bg-dark text-white py-4 mt-auto">
             <div className="container text-center">
-                <p>Simple Counter App using React useState</p>
+                <p className="mb-1">&copy; {new Date().getFullYear()} MyApp. All rights reserved.</p>
+                <p className="mb-0">
+                    <a href="https://github.com" className="text-white text-decoration-none me-3">
+                        <i className="fab fa-github me-1"></i> GitHub
+                    </a>
+                    <a href="mmmm@example.com" className="text-white text-decoration-none">
+                        <i className="fas fa-envelope me-1"></i> Contact Us
+                    </a>
+                </p>
             </div>
-        </footer> 
-        </>
-    )
+        </footer>
+        </>    
+    );
 }
